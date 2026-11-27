@@ -399,9 +399,13 @@ Kembalikan JSON dengan properti "questions" berisi tepat 1 soal pengganti.`;
     console.log(`SMART TEACHER server berjalan di http://localhost:${PORT}`);
   });
 }
+if (!process.env.VERCEL) {
+  startServer().catch((err) => {
+    console.error('Gagal memulai server SMART TEACHER:', err);
+    process.exit(1);
+  });
+}
+export default app;
 
-startServer().catch((err) => {
-  console.error('Gagal memulai server SMART TEACHER:', err);
-  process.exit(1);
 });
 export default app;
