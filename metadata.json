@@ -1,0 +1,6 @@
+{
+  "name": "SMART TEACHER",
+  "description": "Aplikasi Pembuat Soal Latihan dan Ulangan Otomatis berbasis Kurikulum Merdeka untuk guru SD, SMP, dan SMA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
