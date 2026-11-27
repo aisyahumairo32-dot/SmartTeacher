@@ -404,3 +404,4 @@ startServer().catch((err) => {
   console.error('Gagal memulai server SMART TEACHER:', err);
   process.exit(1);
 });
+export default app;
